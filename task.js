@@ -109,14 +109,17 @@ Facilitator.attachSchema(Facilitator.schema);
 export const ChangeRequests = new Mongo.Collection('changeRequestsData');
 
 export const Parent1 = new Mongo.Collection('parent1');
-Session.schema=new SimpleSchema({
-    SessionNo:{type: Number },
-    InfantMonth :{type: String },
-    SessionAddress:{type: String },
-    StartDate:{type: Date },
-	EndDate:{type: Date },
-    ActiveDays:{type: Number },
+Parent1.schema=new SimpleSchema
+({
+Session_No :{type: Number },
+Infant_Month :{type: String },
+Session_Address :{type: String },
+Start_Date :{type: Date },
+End_Date :{type: Date },
+Active_Days :{type: Number } 
 });
+Parent1.attachSchema(Parent1.schema);
+
 export const Facilitators = new Mongo.Collection('facilitatorData');
 export const Satisfactiondata = new Meteor.Collection('Satisfactiondata');
 export const Testing = new Mongo.Collection('testing');
